@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="p5js.css" />
+        <script src="../assets/p5.min.js"></script>
+        <script src="suncalc.min.js"></script>
+        <script src="clock.min.js"></script>
+        <script src="redhook2.min.js"></script>
+        <title>CODE</title>
+    </head>
+    <body class="root">
+        <div class="header">
+            <img class="faceButtonImg" src="../assets/facebw.png" onclick="document.location.href='/'"/>
+            CODE
+        </div>
+        <div class="description">
+            <div class="blurb">
+                I was first introduced to <a href='https://processing.org/'>Processing</a> during a visualizations course in college, where we used it to create interactive data visualizations.
+                <br><br>
+                A few years down the line, I came across p5.js, a JavaScript adaptation of Processing. That discovery was my entrypoint to creative coding, and I've since enjoyed using p5.js to explore the intersection of code and art.
+            </div>
+            <blockquote class="quote" cite="https://p5js.org/">
+                <p>p5.js is a JavaScript library for creative coding, with a focus on making coding accessible and inclusive for artists, designers, educators, beginners, and anyone else! p5.js is free and open-source because we believe software, and the tools to learn it, should be accessible to everyone.</p>
+                <footer>—<a href="https://p5js.org/">p5js.org</a></footer>
+            </blockquote>
+        </div>
+        <div class="works">
+            <div class="worksHeader">
+                Featured work<span class="period">.</span>
+            </div>
+            <div class="pieceSection">
+                <div class="pieceDescription">
+                    <div>
+                        Clock<span class="periodSmall">.</span>js
+                    </div>
+                    <div class="pieceSubtitle">
+                        <div class="instructions">
+                            Instructions: hover your cursor within the canvas to the right to activate the clock.
+                        </div>
+                        <p>
+                            This clock combines aspects of digital clocks and calendars. Each unit of time trickles down to ultimately replace the current one.
+                            Significant solar and lunar milestones are displayed; it'd probably be more useful to display events from your Google Calendar but also much more stressful.
+                        </p>
+                    </div>
+                </div>
+                <div class="pieceCanvas" id="clockSketch"></div>
+            </div>
+            <div class="pieceSection">
+                <span class="pieceDescription">
+                    <div>
+                        OrangeHook<span class="periodSmall">.</span>js
+                    </div>
+                    <div class="pieceSubtitle">
+                        <div class="instructions">
+                            Instructions: hover your cursor within the canvas to the right to activate the sketch. Click within the canvas to pause and unpause drawing. Pressing 'r' or 'f' on your keyboard will also have an effect on the sketch.
+                        </div>
+                        <p>
+                            The base photo is one that I took in Red Hook, Brooklyn. The orange accents in the scene were both striking and dreamlike, and I tried to capture those feelings in this sketch.
+                            The orange flowers are carried across the canvas in a wind-like flow field that utilizes Perlin noise, and the shimmering dots increasingly distort the sketch as it plays.
+                        </p>
+                    </div>
+                </span>
+                <span class="pieceCanvas" id="redhookSketch"></span>
+            </div>
+        </div>
+    </body>
+</html>
