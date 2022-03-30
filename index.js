@@ -10,6 +10,7 @@ function setup() {
 function windowResized() {
     drawBackground();
     writeIntro();
+    console.log(windowWidth, windowHeight);
 }
 
 function mouseClicked() {
@@ -32,13 +33,13 @@ function drawBackground() {
     background(0);
     noStroke();
     fill(104, 128, 162);
-    rect(0,0,windowWidth/2,windowHeight/2);
+    rect(0, 0, windowWidth / 2, windowHeight / 2);
     fill(107, 150, 150);
-    rect(windowWidth/2,0,windowWidth/2,windowHeight/2);
+    rect(windowWidth / 2, 0, windowWidth / 2, windowHeight / 2);
     fill(124, 150, 107);
-    rect(0,windowHeight/2,windowWidth/2,windowHeight/2);
+    rect(0, windowHeight / 2, windowWidth / 2, windowHeight / 2);
     fill(150, 107, 107);
-    rect(windowWidth/2,windowHeight/2,windowWidth/2,windowHeight/2);
+    rect(windowWidth / 2, windowHeight / 2, windowWidth / 2, windowHeight / 2);
 }
 
 function drawCursorTracker() {
@@ -56,19 +57,19 @@ function highlightRect() {
     drawBackground();
     if (mouseX < windowWidth / 2 && mouseY < windowHeight / 2) {
         fill(0, 107, 255);
-        rect(0,0,windowWidth/2,windowHeight/2);
+        rect(0, 0, windowWidth / 2, windowHeight/2);
     }
     else if (mouseX >= windowWidth / 2 && mouseY < windowHeight / 2) {
         fill(0, 243, 194);
-        rect(windowWidth/2,0,windowWidth/2,windowHeight/2);
+        rect(windowWidth/2, 0, windowWidth / 2, windowHeight / 2);
     }
     else if (mouseX < windowWidth / 2 && mouseY >= windowHeight / 2) {
         fill(151, 243, 0);
-        rect(0,windowHeight/2,windowWidth/2,windowHeight/2);
+        rect(0, windowHeight / 2, windowWidth / 2, windowHeight / 2);
     }
     else if (mouseX >= windowWidth / 2 && mouseY >= windowHeight / 2) {
         fill(255, 133, 48);
-        rect(windowWidth/2,windowHeight/2,windowWidth/2,windowHeight/2);
+        rect(windowWidth / 2, windowHeight / 2, windowWidth / 2, windowHeight / 2);
     }
 }
 
