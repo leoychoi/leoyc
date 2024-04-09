@@ -1,0 +1,82 @@
+.root {
+    --highlight-color: rgb(150, 52, 130);
+    background-color:rgb(245,245,245);
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: large;
+    margin: 0;
+}
+
+.highlight {
+    color: var(--highlight-color)
+}
+
+.header {
+    font-size: 72px;
+    background-color: var(--highlight-color);
+    color: white;
+    padding: 10px 50px 10px 10px;
+}
+
+.faceButtonImg {
+    height: 54px;
+    cursor: pointer;
+}
+
+.works {
+    margin: 0px 80px;
+    margin-bottom: 15px;
+}
+
+.worksHeader {
+    font-size: 64px;
+    margin-bottom: 10px;
+}
+
+.period {
+    font-size: 128px;
+    color: var(--highlight-color);
+}
+
+.periodSmall {
+    font-size: 64px;
+    color: var(--highlight-color);
+}
+
+
+.pieceDescription {
+    font-size: 48px;
+}
+
+.instructions {
+    font-style: italic;
+}
+
+.pieceSubtitle {
+    font-size: large;
+    margin-top: 20px;
+    padding-right: 10px;
+}
+
+.pieceSection {
+    display: flex;
+    background: white;
+    border: 4px solid var(--highlight-color);
+    border-radius: 20px;
+    padding: 50px;
+    margin-bottom: 50px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.photo {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
